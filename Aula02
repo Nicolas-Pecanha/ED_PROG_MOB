@@ -1,0 +1,60 @@
+// Exercício número 1 (Aula 2)
+fun main() 
+{
+    print("Escreva dois numeros inteiros ")
+    val numeroInteiro1 = readLine()!!.toInt()
+    
+    val numeroInteiro2 = readLine()!!.toInt()
+
+    val numeroMaior = if (numeroInteiro1 > numeroInteiro2) numeroInteiro1 else numeroInteiro2
+
+    println("O maior número inteiro entre os dois é o: $numeroMaior")
+}
+
+// Exercício número 2 (Aula 2)
+
+fun main() 
+{
+    print("Escreva uma temperatura em graus Celcius ")
+    
+    val grauCelsius = readLine()!!.toDouble()
+
+    val grauFahrenheit = grauCelsius * 1.8 + 32
+
+    println("A temperatura convertida de grau para Fahrenheit é: $grauFahrenheit")
+} 
+
+// Exercício número 3 (Aula 2)
+
+fun main() 
+{
+    print("Escreva a largura de um retangulo ")
+    
+    val larguraRet = readLine()!!.toDouble()
+
+    print("Escreva a altura de um retangulo ")
+    
+    val alturaRet = readLine()!!.toDouble()
+
+    val area = larguraRet * alturaRet
+    val perimetro = 2 * (larguraRet + alturaRet)
+
+    println("A area desse retangulo é: $area")
+    
+    println("O perimetro desse retangulo é: $perimetro")
+} 
+
+// Exercício número 4 (Aula 4)
+
+fun main() 
+{
+    print("Escreva um valor para um produto X ")
+    val produtoValor = readLine()!!.toDouble()
+
+    print("Escreva um valor para desconto em maneira de porcentagem ")
+    val produtoDesconto = readLine()!!.toDouble()
+
+    val valorDesconto = valor * (1 - (produtoDesconto/100))
+
+    println("O valor com desconto é: $valorDesconto")
+} 
